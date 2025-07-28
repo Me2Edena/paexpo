@@ -1,0 +1,27 @@
+[package]
+name = "export_api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+
+# Pour Excel
+
+rust_xlsxwriter = "0.89.1"
+tempfile = "3.3"
+
+
+# Pour CSV
+csv = "1.1"
+
+# Pour Word
+docx-rs = "0.4.17"  # pour créer des .docx
+
+# et ajoute (si tu ne l'as pas) pour gérer le fichier temporaire
+
+# Pour upload/handling d’images (optionnel)
+image = "0.25.6"
